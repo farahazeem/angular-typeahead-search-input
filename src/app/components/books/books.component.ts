@@ -33,4 +33,8 @@ export class BooksComponent implements OnInit {
   selectBook(name:string) {
     (<HTMLInputElement>document.getElementById("search")).value = name;
   }
+
+  clearSearch(){
+    (<HTMLInputElement>document.getElementById("search")).value = '';
+  }
 }
