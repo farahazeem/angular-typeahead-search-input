@@ -1,0 +1,20 @@
+<section class="container">
+  <div class="row">
+    <div class="col-100">
+      <div class="input-box">
+        <label for="search">Search</label>
+        <input id="search" type="text" (keyup)="onSearch($event)">
+      </div>
+    </div>
+    <div class="col-100 py-20">
+      <ul class="list-group">
+        <li class="list-item" *ngFor="let book of books$ | async" (click)="selectBook(book?.volumeInfo?.title)">
+          <img [src]="book?.volumeInfo?.imageLinks?.thumbnail">
+          <p class="list-item-text">
+            {{book?.volumeInfo?.title}}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

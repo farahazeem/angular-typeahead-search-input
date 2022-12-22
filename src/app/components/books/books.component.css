@@ -1,0 +1,52 @@
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  padding: 10px;
+  color: rgb(70, 68, 68);
+  font-size: 20px;
+
+}
+
+#search {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+#search:focus {
+  border: 1px solid gray;
+}
+
+#search::placeholder {
+  content: 'Books';
+  color: rgb(117, 115, 115);
+}
+
+.list-group {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.list-item {
+  display: flex;
+}
+
+.list-item:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.list-item-text {
+}

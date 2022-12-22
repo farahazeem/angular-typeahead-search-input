@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-item {
+padding: 5px 10px;
+}
+
+.nav-item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
